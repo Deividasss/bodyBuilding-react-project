@@ -1,5 +1,6 @@
 import Competitors from "../Competitors/Competitors"
 import { Table } from "react-bootstrap"
+import "../Sass/CompetitorsTable.scss"
 
 const CompetitorsTable = (props) => {
     return (

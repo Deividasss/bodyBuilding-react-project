@@ -38,7 +38,7 @@ const AddCompetitor = (props) => {
     return (
 
         <>
-            <button className="btn-two" onClick={openModal}>Užsiregistruokite</button>
+            <button className="button-85" onClick={openModal}>Užsiregistruokite</button>
             <Modal show={modal}>
                 <Card>
                     <Card.Header>

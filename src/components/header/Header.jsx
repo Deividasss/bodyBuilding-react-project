@@ -2,6 +2,7 @@ import AddCompetitor from "../addCompetitor/AddCompetitor";
 import CompetitorsTable from "../CompetitorsTable/CompetitorsTable";
 import { useState } from "react";
 import { Button, Card } from "react-bootstrap";
+import "../Sass/CompetitorsTable.scss"
 
 
 const Header = () => {
@@ -16,8 +17,8 @@ const Header = () => {
 
     return (
         <>
-            <AddCompetitor onSave={saveCompetitorHandler} />
-            <Card>
+            <AddCompetitor  onSave={saveCompetitorHandler} />
+            <Card className="pagrindinis1">
                 <Card.Body>
                     <CompetitorsTable data={competitor} />
                 </Card.Body>
