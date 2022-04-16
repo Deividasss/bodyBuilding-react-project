@@ -13,16 +13,26 @@ p {
 
 .shopCard {
     width: 18rem !important;
-    margin: 1%;
-    background-color: rgb(101, 101, 101) !important;
+    margin: 2px;
+    background-color: rgba(50, 50, 50, 0.892) !important;
 }
-.shopCard:hover{
-    transform: translate(1%,1%);
-    background-color: rgb(152, 152, 152) !important;
+.shopCard:hover {
+    transform: translate(-1%, -1%);
+    background-color: rgb(61, 61, 61) !important;
 }
 .shopImg {
-   padding-top: 10%;
+    padding-top: 10%;
 }
-.shopPrice{
+.shopPrice {
     text-align: left;
+}
+.shopName {
+    text-align: left;
+    font-size: 15px;
+    margin-top: -15%;
+}
+.shopSearch {
+    width:calc((100% - 30%) / 2);
+    margin-left:calc((100% - 35%) / 2);
+    padding-bottom: 5%;
 }
