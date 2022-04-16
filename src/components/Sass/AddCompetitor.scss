@@ -51,9 +51,26 @@
   border-radius: 10px;
 }
 .compCard {
-  background: radial-gradient(circle, rgba(65, 65, 65, 1) 0%, rgba(105, 61, 61, 1) 0%, rgba(69, 69, 69, 1) 100%);
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(93, 93, 93) 0%, rgb(0, 0, 0) 100%);
   color: white;
+  text-align: center;
 }
-.compHeader{
-  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(75, 43, 43) 0%, rgb(0, 0, 0) 100%);
+.compHeader {
+  background: radial-gradient(circle, rgb(63, 63, 63) 0%, rgb(112, 112, 112) 0%, rgb(42, 42, 42) 100%);
+}
+
+.compClose {
+  float: right;
+}
+.compRegister {
+  margin: 1rem;
+  background-color: rgb(132, 132, 132) !important;
+}
+.compRegister:hover {
+  background-color: rgb(75, 75, 75) !important;
+}
+
+.compForm {
+  background-color: rgba(108, 108, 108, 0.478) !important;
+  color: white !important;
 }

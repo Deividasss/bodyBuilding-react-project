@@ -42,79 +42,84 @@ const AddCompetitor = (props) => {
             <Modal show={modal}>
                 <Card className="compCard">
                     <Card.Header className="compHeader">
-                        Užsiregistruokite varžyboms
+                        Registration
                         <Button
                             type="button"
-                            className="justify-content-end"
-                            data-dismiss="modal"
-                            aria-label="Close"
+                            className="compClose btn-close"
                             onClick={hideModal}
-                            variant='danger'
-                            style={{ float: 'right' }}
+                            variant="danger"
                         >
-                            <span aria-hidden="false">&times;</span>
                         </Button>
                     </Card.Header>
                     <Card.Body>
                         <Form onSubmit={submitHandler}>
                             <Form.Group className="mb-3">
-                                <Form.Label>Vardas:</Form.Label>
+                                <Form.Label>Name:</Form.Label>
                                 <Form.Control
+                                    className="compForm"
                                     type="text"
                                     name="name"
-                                    onChange={handleChange} />
+                                    onChange={handleChange}
+                                    placeholder="Name"
+                                />
                             </Form.Group>
                             <Form.Group className="mb-3">
-                                <Form.Label>Pavardė:</Form.Label>
+                                <Form.Label>Last Name:</Form.Label>
                                 <Form.Control
+                                    className="compForm"
                                     type="text"
                                     name="lastName"
-                                    onChange={handleChange}>
-                                </Form.Control>
+                                    onChange={handleChange}
+                                    placeholder="Last Name"
+                                />
                             </Form.Group>
                             <Form.Group className="mb-3">
-                                <Form.Label>El. paštas:</Form.Label>
+                                <Form.Label>E. mail:</Form.Label>
                                 <Form.Control
+                                    className="compForm"
                                     type="email"
                                     name="email"
                                     onChange={handleChange}
+                                    placeholder="E. mail"
                                 />
                             </Form.Group>
                             <Form.Group>
-                                <Form.Label>Grupė, kurioje dalyvausite</Form.Label>
+                                <Form.Label>Group</Form.Label>
                                 <Form.Select
+                                    className="compForm"
                                     name="group"
                                     onChange={handleChange}
+                                    placeholder="Group"
                                 >
-                                    <option>Pasirinkite grupę</option>
-                                    <option>Klasikinis kultūrizmas</option>
-                                    <option>Kultūrizmas</option>
-                                    <option>Bikini fitness</option>
-                                    <option>Moterų kultūrizmas</option>
-                                    <option>Naujokų kultūrizmas</option>
+                                    <option>Select a group</option>
+                                    <option>Classic Bodybuilding</option>
+                                    <option>Bodybuilding</option>
+                                    <option>Bikini Fitness</option>
+                                    <option>Womens Bodybuilding</option>
+                                    <option>Rokie Bodybuilding</option>
                                 </Form.Select>
                             </Form.Group>
-                            <Button type="submit" className="m-2">Saugoti</Button>
+                            <Button variant="light" type="submit" className="compRegister">Register</Button>
                         </Form>
                     </Card.Body>
                 </Card>
             </Modal>
             <Modal show={thanks}>
-                <Card>
-                    <Card.Header>
+                <Card className="compCard">
+                    <Card.Header className="compHeader">
+                        Registration
                         <Button
                             type="button"
-                            className="justify-content-end"
+                            className="btn-close"
                             data-dismiss="modal"
                             aria-label="Close"
                             onClick={hideModal}
                             variant='danger'
                             style={{ float: 'right' }}
                         >
-                            <span aria-hidden="false">&times;</span>
                         </Button>
                     </Card.Header>
-                    <Card.Body>AČIŪ, KAD UŽSIREGISTRAVOTE <br></br> LAUKSIME JŪSŲ ATVYKSTANT</Card.Body>
+                    <Card.Body className="compCard" >Thanks for signing up <br></br> WE'LL BE WAITING FOR YOUR ARRIVAL</Card.Body>
 
                 </Card>
             </Modal>
