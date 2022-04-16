@@ -4,7 +4,7 @@ import "../Sass/CompetitorsTable.scss"
 
 const CompetitorsTable = (props) => {
     return (
-        <> <table class="table table-striped">
+        <> <Table className="compTableBody">
             <thead class="compTableBody">
                 <tr>
                     <th scope="col">Name</th>
@@ -26,7 +26,7 @@ const CompetitorsTable = (props) => {
                 })
                 }
             </tbody>
-        </table></>
+        </Table></>
     )
 }
 

@@ -2,6 +2,7 @@ import AddCompetitor from "../addCompetitor/AddCompetitor";
 import CompetitorsTable from "../CompetitorsTable/CompetitorsTable";
 import { useState } from "react";
 import "../Sass/CompetitorsTable.scss"
+import { Card } from "react-bootstrap";
 
 
 const Header = () => {
@@ -17,11 +18,9 @@ const Header = () => {
     return (
         <>
             <AddCompetitor  onSave={saveCompetitorHandler} />
-            <table className="compTable">
-                <tbody className="compTableBody">
+            <Card className="compTable">
                     <CompetitorsTable data={competitor} />
-                </tbody>
-            </table>
+            </Card>
         </>
     )
 }
