@@ -39,7 +39,8 @@ const AddCompetitor = (props) => {
 
         <>
             <button className="button-85" onClick={openModal}>Registration</button>
-            <Modal show={modal}>
+            <Modal show={modal} aria-labelledby="contained-modal-title-vcenter"
+                centered>
                 <Card className="compCard">
                     <Card.Header className="compHeader">
                         Registration
@@ -103,8 +104,9 @@ const AddCompetitor = (props) => {
                         </Form>
                     </Card.Body>
                 </Card>
-            </Modal>
-            <Modal show={thanks}>
+            </Modal >
+            <Modal show={thanks} aria-labelledby="contained-modal-title-vcenter"
+                centered>
                 <Card className="compCard">
                     <Card.Header className="compHeader">
                         Registration
