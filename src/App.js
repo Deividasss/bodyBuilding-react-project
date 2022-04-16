@@ -8,13 +8,11 @@ import BodyBuildingInfo from './components/BodyBuildinginInfo/BodyBuildingInfo';
 function App() {
   return (
     <Router>
-      <div className='pagrindinis'>
         <Navigation />
         <Routes>
-          <Route exact path='/' element={<Header />} />
-          <Route exact path='/BodyBuildingInfo' element={<BodyBuildingInfo />} />
+          <Route exact path='/Header' element={<Header />} />
+          <Route exact path='/' element={<BodyBuildingInfo />} />
         </Routes>
-      </div >
     </Router >
   )
 }

@@ -4,13 +4,13 @@ import "../Sass/CompetitorsTable.scss"
 
 const CompetitorsTable = (props) => {
     return (
-        <> <Table striped bordered hover>
-            <thead>
+        <> <table class="table table-striped">
+            <thead class="compTableBody">
                 <tr>
-                    <th>Vardas</th>
-                    <th>Pavardė</th>
-                    <th>El. paštas</th>
-                    <th>Grupė</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Group</th>
                 </tr>
             </thead>
             <tbody>
@@ -26,7 +26,7 @@ const CompetitorsTable = (props) => {
                 })
                 }
             </tbody>
-        </Table></>
+        </table></>
     )
 }
 

@@ -38,10 +38,10 @@ const AddCompetitor = (props) => {
     return (
 
         <>
-            <button className="button-85" onClick={openModal}>Užsiregistruokite</button>
+            <button className="button-85" onClick={openModal}>Registration</button>
             <Modal show={modal}>
-                <Card>
-                    <Card.Header>
+                <Card className="compCard">
+                    <Card.Header className="compHeader">
                         Užsiregistruokite varžyboms
                         <Button
                             type="button"
@@ -117,7 +117,8 @@ const AddCompetitor = (props) => {
                     <Card.Body>AČIŪ, KAD UŽSIREGISTRAVOTE <br></br> LAUKSIME JŪSŲ ATVYKSTANT</Card.Body>
 
                 </Card>
-            </Modal></>
+            </Modal>
+        </>
     )
 }
 
