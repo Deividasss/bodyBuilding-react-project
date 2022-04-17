@@ -19,8 +19,7 @@ const MainShop = (props) => {
             <Form className="shopSearch">
                 <Form.Select
                     onChange={handleChange}
-                    className="shopSelect"
-                >
+                    className="shopSelect">
                     <option>Select a group</option>
                     <option>Belts</option>
                     <option>Wrist straps</option>
