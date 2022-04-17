@@ -23,9 +23,8 @@ const MainShop = (props) => {
                     <option>Select a group</option>
                     <option>Belts</option>
                     <option>Wrist straps</option>
-                    <option>Bikini Fitness</option>
-                    <option>Womens Bodybuilding</option>
-                    <option>Rokie Bodybuilding</option>
+                    <option>Sleeves</option>
+                    <option>Shoes</option>
                 </Form.Select>
             </Form>
 

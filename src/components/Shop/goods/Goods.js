@@ -96,6 +96,86 @@ const Goods = [
         type: 'Belts',
         img: "https://di2ponv0v5otw.cloudfront.net/posts/2019/04/26/5cc3bc5fb3e917355ee473ec/m_5cc3bc8d8557aff527395770.jpg"
     },
+    {
+        id: '13',
+        title: 'SBD Powerlifting Sleeves',
+        price: '64$',
+        inStock: '13',
+        type: 'Sleeves',
+        img: "https://i.ebayimg.com/images/g/500AAOSwIBBUaNfT/s-l300.jpg"
+    },
+    {
+        id: '14',
+        title: 'Stoic Powerlifting Sleeves',
+        price: '35$',
+        inStock: '10',
+        type: 'Sleeves',
+        img: "https://www.ubuy.vn/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvOTFuWE1zb1U0ekwuX0FDX1NMMTUwMF8uanBn.jpg"
+    },
+    {
+        id: '15',
+        title: 'PROfitness Powerlifting Sleeves',
+        price: '42$',
+        inStock: '18',
+        type: 'Sleeves',
+        img: "https://www.ubuy.com.ru/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNzFTZnVtZmk2U0wuX0FDX1NMMTUwMF8uanBn.jpg"
+    },
+    {
+        id: '16',
+        title: 'Gymreapers Powerlifting Sleevesc (black)',
+        price: '40$',
+        inStock: '8',
+        type: 'Sleeves',
+        img: "https://m.media-amazon.com/images/I/41BBAL4ekvS._AC_.jpg"
+    },
+    {
+        id: '17',
+        title: 'Gymreapers Powerlifting Sleeves (red)',
+        price: '40$',
+        inStock: '9',
+        type: 'Sleeves',
+        img: "https://m.media-amazon.com/images/I/4124RCu2obS._AC_.jpg"
+    },
+    {
+        id: '18',
+        title: 'Champ Powerlifting Sleeves (red)',
+        price: '52$',
+        inStock: '5',
+        type: 'Sleeves',
+        img: "http://cdn.shopify.com/s/files/1/2868/3070/products/Black_Powerlifting_Knee_Sleeves_Champ.jpg?v=1608655347"
+    },
+    {
+        id: '19',
+        title: 'Adidas Powerlifting Shoes',
+        price: '160$',
+        inStock: '6',
+        type: 'Shoes',
+        img: "https://gaponez.com/wa-data/public/shop/products/00/webp/62/81/8162/images/13940/13940.970.webp"
+    },
+    {
+        id: '20',
+        title: 'Adidas Powerlifting Shoes',
+        price: '150$',
+        inStock: '6',
+        type: 'Shoes',
+        img: "https://gaponez.com/wa-data/public/shop/products/02/webp/38/66/6638/images/15367/15367.970.webp"
+    },
+    {
+        id: '21',
+        title: 'NIKE ROMALEOS 2 Powerlifting Shoes',
+        price: '182$',
+        inStock: '4',
+        type: 'Shoes',
+        img: "https://cdn11.bigcommerce.com/s-ob1gxw6h/images/stencil/1280x1280/products/1443/1567/orange-blue__55356.1564006639.jpg?c=2"
+    },
+    {
+        id: '22',
+        title: 'Tomix 2 Powerlifting Shoes',
+        price: '145$',
+        inStock: '7',
+        type: 'Shoes',
+        img: "https://m.media-amazon.com/images/I/61pkcJ17qoL._AC_UL320_.jpg"
+    },
 ]
 
 export default Goods
