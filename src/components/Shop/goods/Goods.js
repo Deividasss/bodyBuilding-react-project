@@ -5,7 +5,7 @@ const Goods = [
         title: 'Texas Powerlifting Belt',
         price: '175$',
         inStock: '12',
-        type: 'Belt',
+        type: 'Belts',
         img: "https://www.liftinglarge.com/assets/images/Brahma_Lever_Belt.jpg"
     },
     {
@@ -13,7 +13,7 @@ const Goods = [
         title: 'Texas Brahma Powerlifting Belt',
         price: '170$',
         inStock: '18',
-        type: 'Belt',
+        type: 'Belts',
         img: "https://www.liftinglarge.com/assets/images/brahma_prong_belt-3.jpg"
     },
     {
@@ -21,7 +21,7 @@ const Goods = [
         title: 'SBD Powerlifting Belt',
         price: '250$',
         inStock: '14',
-        type: 'Belt',
+        type: 'Belts',
         img: "https://www.sportheavy.eu/tuotekuvat/6F852292-743B-44C4-9D01-8BB648373E63.jpeg"
     },
     {
@@ -45,7 +45,7 @@ const Goods = [
         title: 'Rogue Powerlifting Belt',
         price: '220$',
         inStock: '17',
-        type: 'Belt',
+        type: 'Belts',
         img: "https://powerliftingtechnique.com/wp-content/uploads/2020/06/Rogue-3-Inch-Ohio.jpg"
     },
     {
@@ -61,7 +61,7 @@ const Goods = [
         title: 'Rogue Powerlifting Belt',
         price: '120$',
         inStock: '6',
-        type: 'Belt',
+        type: 'Belts',
         img: "https://assets.roguefitness.com/f_auto,q_auto,c_limit,w_414,b_rgb:f8f8f8/catalog/Straps%20Wraps%20and%20Support%20/Belts%20/Weightlifting/PS0027/PS0027-H_dasxkd.png"
     },
     {
@@ -69,7 +69,7 @@ const Goods = [
         title: 'Tuff Wrist Straps',
         price: '24$',
         inStock: '12',
-        type: 'Wrist strap',
+        type: 'Wrist straps',
         img: "https://cdn.shopify.com/s/files/1/0787/5969/products/villain-wrist-wraps-24-black-camo-wrist-wraps-tuffwraps-com-13790993711192_2000x.jpg?v=1628204300"
     },
     {
@@ -77,7 +77,7 @@ const Goods = [
         title: 'Rogue Powerlifting Belt',
         price: '180$',
         inStock: '9',
-        type: 'Belt',
+        type: 'Belts',
         img: "https://assets.roguefitness.com/f_auto,q_auto,c_limit,w_1600,b_rgb:ffffff/catalog/Straps%20Wraps%20and%20Support%20/Belts%20/Weightlifting/HDDLEVSD/HDDLEVSD-h_ylyzck.png"
     },
     {
@@ -85,7 +85,7 @@ const Goods = [
         title: 'Tuff Wrist Straps',
         price: '24$',
         inStock: '11',
-        type: 'Wrist strap',
+        type: 'Wrist straps',
         img: "https://cdn.shopify.com/s/files/1/0787/5969/products/villain-wrist-wraps-27-black-pink-wrist-wraps-tuffwraps-com-28459911184472_2000x.jpg?v=1628085504"
     },
     {
@@ -93,7 +93,7 @@ const Goods = [
         title: 'SBD Powerlifting Belt',
         price: '210$',
         inStock: '7',
-        type: 'Belt',
+        type: 'Belts',
         img: "https://di2ponv0v5otw.cloudfront.net/posts/2019/04/26/5cc3bc5fb3e917355ee473ec/m_5cc3bc8d8557aff527395770.jpg"
     },
 ]

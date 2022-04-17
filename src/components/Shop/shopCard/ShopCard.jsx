@@ -11,9 +11,9 @@ const ShopCard = (props) => {
             <Card className="shopCard">
                 <Card.Img className="shopImg" variant="top" src={props.img} />
                 <Card.Body>
-                    <Card.Text className="shopPrice">{props.price}/{item}vnt</Card.Text>
+                    <Card.Text className="shopPrice">{props.price}<span>/{item}vnt</span></Card.Text>
                     <Card.Text className="shopName">{props.title}</Card.Text>
-                    <Button onClick={() => setItem(item - 1)} variant="danger">BUY</Button>
+                    <Button className="shopCardBtn" onClick={() => setItem(item - 1)} variant="light">ADD TO CART</Button>
                 </Card.Body>
             </Card>
         </>

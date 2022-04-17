@@ -10,6 +10,10 @@ p {
     padding-top: 2%;
     padding-bottom: 10%;
 }
+.shopSelect{
+    background-color: rgba(147, 147, 147, 0.314) !important;
+    color: white;
+}
 
 .shopCard {
     width: 18rem !important;
@@ -17,11 +21,32 @@ p {
     background-color: rgba(50, 50, 50, 0.892) !important;
 }
 .shopCard:hover {
-    transform: translate(-1%, -1%);
     background-color: rgb(61, 61, 61) !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .shopImg {
     padding-top: 10%;
+    cursor: pointer;
+    width: 100%;
+    height: 50%;
+    transition: transform 300ms ease-in;
+    transform: scale(1);
+    @media (min-width: 991px) {
+        min-height: 200px;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+.shopCardBtn {
+    background-color: rgb(110, 110, 110) !important;
+    width: calc(100% - 40%);
+    color: white !important;
+    margin-left:calc(100% - 80%);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif!important;
+}
+.shopCardBtn:hover {
+    background-color: rgb(201, 201, 201) !important;
 }
 .shopPrice {
     text-align: left;
@@ -32,7 +57,11 @@ p {
     margin-top: -15%;
 }
 .shopSearch {
-    width:calc((100% - 30%) / 2);
-    margin-left:calc((100% - 35%) / 2);
+    width: calc((100% - 30%) / 2);
+    margin-left: calc((100% - 35%) / 2);
     padding-bottom: 5%;
+}
+span{
+    color: rgb(193, 193, 193);
+    font-size: 20px;
 }

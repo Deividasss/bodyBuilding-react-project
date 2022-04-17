@@ -3,7 +3,6 @@ import ShopCard from "../shopCard/ShopCard"
 import Goods from "../goods/Goods"
 import { Form } from "react-bootstrap"
 import { useState } from "react"
-import { propTypes } from "react-bootstrap/esm/Image"
 
 
 const MainShop = (props) => {
@@ -18,17 +17,13 @@ const MainShop = (props) => {
             <p>Here you will find equipment and accessories that will help you achieve the desired results</p>
 
             <Form className="shopSearch">
-                <Form.Control
-                    type="text"
-                    placeholder="Search..."
-                    onChange={handleChange}
-                />
                 <Form.Select
                     onChange={handleChange}
+                    className="shopSelect"
                 >
                     <option>Select a group</option>
-                    <option>Belt</option>
-                    <option>Wrist Straps</option>
+                    <option>Belts</option>
+                    <option>Wrist straps</option>
                     <option>Bikini Fitness</option>
                     <option>Womens Bodybuilding</option>
                     <option>Rokie Bodybuilding</option>
@@ -37,7 +32,7 @@ const MainShop = (props) => {
 
             <div className="container">
                 <div className='row justify-content-center'>
-                    {Goods.filter(goods => goods.type.toLocaleLowerCase().includes(search)).map((shop, i) =>
+                    {Goods.filter(goods => goods.type.includes(search)).map((shop, i) =>
                         <ShopCard
                             key={i}
                             title={shop.title}
