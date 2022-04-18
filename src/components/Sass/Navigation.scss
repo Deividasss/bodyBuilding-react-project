@@ -1,26 +1,39 @@
-
-.navBar{
+.navigation {
     background-color: rgba(0, 0, 0, 0.552);
+
 }
 
-.navLogo{
+.navLogo {
     color: white !important;
     font-size: 30px !important;
     text-decoration: none;
 }
 
-.navLinks{
+.navLinks {
     text-decoration: none;
     color: white;
     padding-left: 2rem;
     font-size: 15px;
-    
 }
-.navLinks:hover{
+.navLinks:hover {
     color: rgb(117, 117, 117);
 }
-.navDrop{
-    text-decoration: none !important;
-    color: white !important;
-    float: left !important;
+.navCart {
+    text-decoration: none;
+    color: white;
+    padding-left: 2rem;
+    font-size: 20px;
+    display: flex;
+    padding-right: 2rem;
 }
+.navCart:hover {
+    color: rgb(117, 117, 117);
+}
+.navBars {
+    background-color: rgba(200, 198, 198, 0.247) !important;
+}
+.dropDown {
+    padding: 5%;
+    background-color: rgba(75, 75, 75, 0.266);
+}
+
