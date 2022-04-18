@@ -6,6 +6,11 @@ import "../../Sass/MainShop.scss"
 const ShopCard = (props) => {
     const [item, setItem] = useState(props.inStock)
 
+    if (item === 0) {
+        item = 'out of stock'
+    }
+
+
     return (
         <>
             <Card className="shopCard">

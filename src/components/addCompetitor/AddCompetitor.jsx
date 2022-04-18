@@ -8,9 +8,9 @@ const AddCompetitor = (props) => {
     const [thanks, setThanks] = useState(false)
     const [term, setTerm] = useState({
         'name': '',
-        'lastName': '',
-        'email': '',
-        'group': '',
+        'team': '',
+        'category': '',
+        'record': '',
     })
 
     const openModal = () => {
@@ -38,15 +38,15 @@ const AddCompetitor = (props) => {
     return (
 
         <>
-            <button className="button-85" onClick={openModal}>Registration</button>
+            <button className="button-85" onClick={openModal}>Add New Record</button>
             <Modal show={modal} aria-labelledby="contained-modal-title-vcenter"
                 centered>
-                <Card className="compCard">
-                    <Card.Header className="compHeader">
-                        Registration
+                <Card className="recordCard">
+                    <Card.Header className="recordHeader">
+                        Add New Record
                         <Button
                             type="button"
-                            className="compClose btn-close"
+                            className="recordClose btn-close"
                             onClick={hideModal}
                             variant="danger"
                         >
@@ -55,61 +55,60 @@ const AddCompetitor = (props) => {
                     <Card.Body>
                         <Form onSubmit={submitHandler}>
                             <Form.Group className="mb-3">
-                                <Form.Label>Name:</Form.Label>
+                                <Form.Label>Name/ Last Name:</Form.Label>
                                 <Form.Control
-                                    className="compForm"
+                                    className="recordForm"
                                     type="text"
                                     name="name"
                                     onChange={handleChange}
-                                    placeholder="Name"
+                                    placeholder="Name/ Last name..."
                                 />
                             </Form.Group>
                             <Form.Group className="mb-3">
-                                <Form.Label>Last Name:</Form.Label>
+                                <Form.Label>Team:</Form.Label>
                                 <Form.Control
-                                    className="compForm"
+                                    className="recordForm"
                                     type="text"
-                                    name="lastName"
+                                    name="team"
                                     onChange={handleChange}
-                                    placeholder="Last Name"
+                                    placeholder="Team..."
                                 />
                             </Form.Group>
                             <Form.Group className="mb-3">
-                                <Form.Label>E. mail:</Form.Label>
-                                <Form.Control
-                                    className="compForm"
-                                    type="email"
-                                    name="email"
-                                    onChange={handleChange}
-                                    placeholder="E. mail"
-                                />
-                            </Form.Group>
-                            <Form.Group>
-                                <Form.Label>Group</Form.Label>
+                                <Form.Label>Category:</Form.Label>
                                 <Form.Select
-                                    className="compForm"
-                                    name="group"
+                                    className="recordForm"
+                                    type="text"
+                                    name="category"
                                     onChange={handleChange}
-                                    placeholder="Group"
+                                    placeholder="Category..."
                                 >
-                                    <option>Select a group</option>
-                                    <option>Classic Bodybuilding</option>
-                                    <option>Bodybuilding</option>
-                                    <option>Bikini Fitness</option>
-                                    <option>Womens Bodybuilding</option>
-                                    <option>Rokie Bodybuilding</option>
+                                    <option>Choose Category</option>
+                                    <option>DEADLIFT</option>
+                                    <option>BENCH PRESS</option>
+                                    <option>SQUAT</option>
                                 </Form.Select>
                             </Form.Group>
-                            <Button variant="light" type="submit" className="compRegister">Register</Button>
+                            <Form.Group>
+                                <Form.Label>New record:</Form.Label>
+                                <Form.Control
+                                    className="recordForm"
+                                    name="record"
+                                    onChange={handleChange}
+                                    placeholder="New record..."
+                                    type="number"
+                                />
+                            </Form.Group>
+                            <Button variant="light" type="submit" className="addRecord">Add</Button>
                         </Form>
                     </Card.Body>
                 </Card>
             </Modal >
             <Modal show={thanks} aria-labelledby="contained-modal-title-vcenter"
                 centered>
-                <Card className="compCard">
-                    <Card.Header className="compHeader">
-                        Registration
+                <Card className="recordCard">
+                    <Card.Header className="recordHeader">
+                        New record was added
                         <Button
                             type="button"
                             className="btn-close"
@@ -121,7 +120,7 @@ const AddCompetitor = (props) => {
                         >
                         </Button>
                     </Card.Header>
-                    <Card.Body className="compCard" >Thanks for signing up <br></br> WE'LL BE WAITING FOR YOUR ARRIVAL</Card.Body>
+                    <Card.Body className="recordCard" ><h3>New record was added!!!</h3> We are happy to see that you athieved new record</Card.Body>
 
                 </Card>
             </Modal>

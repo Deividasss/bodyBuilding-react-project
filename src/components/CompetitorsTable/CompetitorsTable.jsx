@@ -7,10 +7,10 @@ const CompetitorsTable = (props) => {
         <> <table class="table table-striped">
             <thead class="compTableBody">
                 <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Last Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Group</th>
+                    <th scope="col">Name/ Last name</th>
+                    <th scope="col">Team</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Record</th>
                 </tr>
             </thead>
             <tbody>
@@ -19,9 +19,9 @@ const CompetitorsTable = (props) => {
                         key={i}
                         id={comp.id}
                         name={comp.name}
-                        lastName={comp.lastName}
-                        email={comp.email}
-                        group={comp.group}
+                        team={comp.team}
+                        category={comp.category}
+                        record={comp.record}
                     />)
                 })
                 }

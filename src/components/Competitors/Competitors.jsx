@@ -5,9 +5,9 @@ const Competitors = (props) => {
         <>
             <tr>
                 <td>{props.name}</td>
-                <td>{props.lastName}</td>
-                <td>{props.email}</td>
-                <td>{props.group}</td>
+                <td>{props.team}</td>
+                <td>{props.category}</td>
+                <td>{props.record}</td>
             </tr>
         </>
     )

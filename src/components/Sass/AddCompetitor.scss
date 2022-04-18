@@ -51,27 +51,30 @@
   top: 0;
   border-radius: 10px;
 }
-.compCard {
+.recordCard {
   background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(93, 93, 93) 0%, rgb(0, 0, 0) 100%);
   color: white;
   text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.compHeader {
+.recordHeader {
   background: radial-gradient(circle, rgb(63, 63, 63) 0%, rgb(112, 112, 112) 0%, rgb(42, 42, 42) 100%);
 }
 
-.compClose {
+.recordClose {
   float: right;
 }
-.compRegister {
+.addRecord {
   margin: 1rem;
-  background-color: rgb(132, 132, 132) !important;
+  background-color: rgb(88, 88, 88) !important;
+  width: calc(100% - 70%);
 }
-.compRegister:hover {
-  background-color: rgb(75, 75, 75) !important;
+.addRecord:hover {
+  background-color: rgb(108, 108, 108) !important;
 }
 
-.compForm {
-  background-color: rgba(108, 108, 108, 0.478) !important;
+.recordForm {
+  background-color: rgba(83, 83, 83, 0.478) !important;
   color: white !important;
 }
+
