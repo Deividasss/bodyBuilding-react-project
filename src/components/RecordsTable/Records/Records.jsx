@@ -1,6 +1,6 @@
 
 
-const Competitors = (props) => {
+const Records = (props) => {
     return (
         <>
             <tr>
@@ -13,4 +13,4 @@ const Competitors = (props) => {
     )
 }
 
-export default Competitors
+export default Records

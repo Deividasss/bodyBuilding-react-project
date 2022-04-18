@@ -1,10 +1,10 @@
-import Competitors from "../Competitors/Competitors"
+import Records from "../Records/Records"
 import { Table } from "react-bootstrap"
-import "../Sass/CompetitorsTable.scss"
+import "../../Sass/CompetitorsTable.scss"
 
-const CompetitorsTable = (props) => {
+const RecordsTable = (props) => {
     return (
-        <> <table class="table table-striped">
+        <> <Table class="table table-striped">
             <thead class="compTableBody">
                 <tr>
                     <th scope="col">Name/ Last name</th>
@@ -15,7 +15,7 @@ const CompetitorsTable = (props) => {
             </thead>
             <tbody>
                 {props.data.map((comp, i) => {
-                    return (<Competitors
+                    return (<Records
                         key={i}
                         id={comp.id}
                         name={comp.name}
@@ -26,8 +26,8 @@ const CompetitorsTable = (props) => {
                 })
                 }
             </tbody>
-        </table></>
+        </Table></>
     )
 }
 
-export default CompetitorsTable
+export default RecordsTable

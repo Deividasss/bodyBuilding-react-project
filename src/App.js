@@ -1,6 +1,6 @@
 import './components/Sass/App.scss';
 import Navigation from './components/Nav/Navigation';
-import Header from './components/header/Header';
+import Header from './components/RecordsTable/header/Header';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import BodyBuildingInfo from './components/BodyBuildinginInfo/BodyBuildingInfo';
 import MainShop from './components/Shop/mainShop/MainShop';

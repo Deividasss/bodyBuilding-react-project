@@ -1,9 +1,9 @@
 import { useState } from "react"
 import { Form, Card, Button, Modal } from "react-bootstrap"
-import "../Sass/AddCompetitor.scss"
+import "../../Sass/AddCompetitor.scss"
 
 
-const AddCompetitor = (props) => {
+const AddRecord = (props) => {
     const [modal, setModal] = useState(false)
     const [thanks, setThanks] = useState(false)
     const [term, setTerm] = useState({
@@ -128,4 +128,4 @@ const AddCompetitor = (props) => {
     )
 }
 
-export default AddCompetitor
+export default AddRecord
