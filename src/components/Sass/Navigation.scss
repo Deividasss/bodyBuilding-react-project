@@ -1,6 +1,5 @@
 .navigation {
     background-color: rgba(0, 0, 0, 0.552);
-
 }
 
 .navLogo {
@@ -30,10 +29,98 @@
     color: rgb(117, 117, 117);
 }
 .navBars {
-    background-color: rgba(200, 198, 198, 0.247) !important;
+    background-color: rgba(200, 198, 198, 0.384) !important;
 }
 .dropDown {
     padding: 5%;
     background-color: rgba(75, 75, 75, 0.266);
 }
+.canvasHeader {
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+.canvasTitle{
+    margin-left: 40%;
+}
+.canvas {
+    background-color: rgb(66, 66, 66);
+}
+.canvasForm {
+    color: white;
+    padding: 5% 10% 5% 10%;
+    background-color: rgb(74, 74, 74);
+    border-radius: 5%;
+}
 
+.top-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    border-radius: 50%;
+    padding: 2%;
+    margin-left: 2%;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #272727;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    color: white;
+}
+
+.mail {
+    font-size: 14px;
+    color: grey;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.canvasCard {
+    background-color: #272727;
+    border-radius: 3%;
+}
+.middle-container {
+    background-color: rgb(61, 61, 61);
+    border-radius: 10px;
+    margin: 0 2% 0 2%;
+    padding: 2%;
+}
+
+.current-balance {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.amount {
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dollar-sign {
+    font-size: 16px;
+    color: #b3b3b3;
+    font-weight: bold;
+    margin-right: 2%;
+}
+.canvasBtn{
+    background-color: #555555 !important;
+    margin: 5%;
+    color: white;
+}
+.canvasBtn:hover{
+    background-color: #707070 !important;
+}
+.canvasBtnLink{
+    text-decoration: none;
+    color: white;
+}
+.canvasBtnLink:hover{
+    color: black;
+}
