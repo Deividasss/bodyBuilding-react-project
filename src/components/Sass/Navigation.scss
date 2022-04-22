@@ -136,7 +136,7 @@
     .navLink1 {
         text-decoration: none;
         color: white;
-        left: calc(100% - 80%);
+        left: calc(100% - 78%);
         font-size: 15px;
         position: absolute;
         bottom: 15px;
@@ -146,7 +146,7 @@
         color: white;
         font-size: 15px;
         position: absolute;
-        left: calc(100% - 63%);
+        left: calc(100% - 60%);
         bottom: 15px;
     }
     .navLink1:hover {
@@ -224,7 +224,7 @@
     .navLink1 {
         text-decoration: none;
         color: white;
-        left: calc(100% - 79%);
+        left: calc(100% - 82%);
         font-size: 15px;
         position: absolute;
         bottom: 15px;
@@ -234,31 +234,7 @@
         color: white;
         font-size: 15px;
         position: absolute;
-        left: calc(100% - 65%);
-        bottom: 15px;
-    }
-    .navLink1:hover {
-        color: rgb(117, 117, 117);
-    }
-    .navLink2:hover {
-        color: rgb(117, 117, 117);
-    }
-}
-@media only screen and (min-width: 1400px) {
-    .navLink1 {
-        text-decoration: none;
-        color: white;
-        left: calc(100% - 79%);
-        font-size: 15px;
-        position: absolute;
-        bottom: 15px;
-    }
-    .navLink2 {
-        text-decoration: none;
-        color: white;
-        font-size: 15px;
-        position: absolute;
-        left: calc(100% - 65%);
+        left: calc(100% - 68%);
         bottom: 15px;
     }
     .navLink1:hover {
