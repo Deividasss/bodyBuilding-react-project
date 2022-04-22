@@ -2,18 +2,10 @@
     margin: 5%;
     color: white;
 }
-.loginBtnLink{
+.loginBtn{
+    background-color: #555555 !important;
     color: white;
-    text-decoration: none;
-    background-color: rgb(60, 60, 60);
-    padding: 2%;
-    border-radius: 5px;
-    width: 20%;
-    text-align: center;
-    margin-left: 40%;
-    border: solid 2px rgb(165, 165, 165);
 }
-.loginBtnLink:hover{
-    color: black;
-    background-color: rgb(92, 92, 92);
+.loginBtn:hover{
+    background-color: #707070 !important;
 }

@@ -11,7 +11,7 @@
 .navLink1 {
     text-decoration: none;
     color: white;
-    padding-left: 2rem;
+    left: calc(100% - 82%);
     font-size: 15px;
     position: absolute;
     bottom: 15px;
@@ -19,10 +19,9 @@
 .navLink2 {
     text-decoration: none;
     color: white;
-    padding-left: 2rem;
     font-size: 15px;
     position: absolute;
-    left: 25rem;
+    left: calc(100% - 70%);
     bottom: 15px;
 }
 .navLink1:hover {
@@ -130,11 +129,4 @@
 }
 .canvasBtn:hover{
     background-color: #707070 !important;
-}
-.canvasBtnLink{
-    text-decoration: none;
-    color: white;
-}
-.canvasBtnLink:hover{
-    color: black;
 }

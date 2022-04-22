@@ -31,6 +31,8 @@ const AddRecord = (props) => {
     const submitHandler = (e) => {
         e.preventDefault()
         props.onSave(term)
+        setModal(false)
+        setThanks(true)
         console.log(term)
     }
     return (

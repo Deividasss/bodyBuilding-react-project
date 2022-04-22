@@ -1,11 +1,11 @@
 import { Nav, Navbar, Container, Dropdown, Form, Button, Offcanvas, NavDropdown, FormControl } from "react-bootstrap"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import "../Sass/Navigation.scss"
 import { FaShoppingCart, FaBars } from 'react-icons/fa';
 
-
-
 const Navigation = () => {
+    const navigate = useNavigate();
+
 
     return (
         <>
@@ -37,7 +37,7 @@ const Navigation = () => {
                                 <div class="middle-container">
                                     <div class="d-flex flex-column text-right mr-2"> <span class="current-balance">Current Balance:</span> <span class="amount">1476 <span class="dollar-sign">$</span></span></div>
                                 </div>
-                                <Button variant="dark" className="canvasBtn"><Link className="canvasBtnLink" to="/">Sign Out</Link></Button>
+                                <Button className="canvasBtn" variant="dark" onClick={()=> navigate("/")}>Sign Out</Button>
                             </div>
                            
                         </Offcanvas.Body>

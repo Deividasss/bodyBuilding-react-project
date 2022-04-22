@@ -34,7 +34,8 @@ const Login = () => {
                         type="text"
                         placeholder="UserName"
                         name="name"
-                        onChange={handleChange}  
+                        onChange={handleChange}
+                        required  
                     />
                 </Form.Group>
                 <Form.Group className="mb-3">
@@ -44,6 +45,7 @@ const Login = () => {
                         placeholder="Enter email"
                         name="email"
                         onChange={handleChange}
+                        required
                     />
                     <Form.Text className="text-muted">
                         We'll never share your email with anyone else.
@@ -56,12 +58,13 @@ const Login = () => {
                         type="password"
                         placeholder="Password"
                         name="password"
+                        required
                     />
                 </Form.Group>
                 <Form.Group className="mb-3">
                     <Form.Check type="checkbox" label="Save info" />
                 </Form.Group>
-                <Button type="submit">LOGIN</Button>
+                <Button className="loginBtn" variant="dark" type="submit">LOGIN</Button>
             </Form>
         </>
     )
