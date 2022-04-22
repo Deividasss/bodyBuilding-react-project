@@ -8,13 +8,27 @@
     text-decoration: none;
 }
 
-.navLinks {
+.navLink1 {
     text-decoration: none;
     color: white;
     padding-left: 2rem;
     font-size: 15px;
+    position: absolute;
+    bottom: 15px;
 }
-.navLinks:hover {
+.navLink2 {
+    text-decoration: none;
+    color: white;
+    padding-left: 2rem;
+    font-size: 15px;
+    position: absolute;
+    left: 25rem;
+    bottom: 15px;
+}
+.navLink1:hover {
+    color: rgb(117, 117, 117);
+}
+.navLink2:hover {
     color: rgb(117, 117, 117);
 }
 .navCart {

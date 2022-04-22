@@ -13,8 +13,8 @@ const Navigation = () => {
                 <Container>
                     <Link className="navLogo" to="BodyBuildingInfo">BodyX</Link>
                     <Nav className="me-auto">
-                        <Link className="navLinks" to="/Header">Powerlifting record table</Link>
-                        <Link className="navLinks" to="/MainShop">Shop</Link>
+                        <Link className="navLink1" to="/Header">Powerlifting record table</Link>
+                        <Link className="navLink2" to="/MainShop">Shop</Link>
                     </Nav>
                     <Link className="navCart" to="/Cart"><FaShoppingCart /></Link>
                     <Navbar.Toggle className="navBars"><FaBars /></Navbar.Toggle>
