@@ -1,4 +1,3 @@
-
 h1 {
     text-align: center;
     color: white;
@@ -15,48 +14,6 @@ p {
     background-color: rgba(119, 119, 119, 0.785) !important;
     color: white;
 }
-
-.shopCard {
-    width: 100% !important;
-    margin: 2px;
-    background-color: rgba(50, 50, 50, 0.892) !important;
-}
-.shopCard:hover {
-    background-color: rgb(61, 61, 61) !important;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-.shopImg {
-    padding-top: 10%;
-    cursor: pointer;
-    width: 100%;
-    height: 50%;
-    transition: transform 300ms ease-in;
-    transform: scale(1);
-    @media (min-width: 991px) {
-        min-height: 200px;
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-}
-.shopCardBtn {
-    background-color: rgb(110, 110, 110) !important;
-    width: calc(100% - 40%);
-    color: white !important;
-    margin-left: calc(100% - 80%);
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif !important;
-}
-.shopCardBtn:hover {
-    background-color: rgb(201, 201, 201) !important;
-}
-.shopPrice {
-    text-align: left;
-}
-.shopName {
-    text-align: left;
-    font-size: 15px;
-    margin-top: -15%;
-}
 .shopSearch {
     width: calc((100% - 30%) / 2);
     margin-left: calc((100% - 35%) / 2);
@@ -64,7 +21,7 @@ p {
 }
 span {
     color: rgb(193, 193, 193);
-    font-size: 20px;
+    font-size: 15px;
 }
 //------------------------------------------------------------INFO ABOUT ITEM----------------------------------------------------------------//
 
@@ -207,21 +164,6 @@ span {
     padding: 15px 12px;
     position: relative;
 }
-.product-grid .add-to-cart {
-    color: #b7ff7c;
-    font-size: 15px;
-    font-weight: 600;
-    transform: translateX(-50%);
-    position: absolute;
-    top: 13px;
-    left: 50%;
-    opacity: 0;
-    transition: all 1s ease 0s;
-    
-}
-.product-grid:hover .add-to-cart {
-    opacity: 1;
-}
 .product-grid .shopingCart {
     font-size: 15px;
     margin: 0 5px 0 0;
@@ -230,15 +172,8 @@ span {
     font-size: 16px;
     font-weight: 500;
     margin: 0 0 10px;
-    transition: all 0.3s ease 0s;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    cursor: pointer;
-
-}
-
-.product-grid:hover .product-title {
-    opacity: 0;
 }
 .product-grid .rating {
     color: #ffffff;
@@ -251,7 +186,7 @@ span {
 }
 .product-grid .price {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
 }
 @media screen and (max-width: 990px) {

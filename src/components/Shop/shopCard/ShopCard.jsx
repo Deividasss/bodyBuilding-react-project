@@ -35,9 +35,9 @@ const ShopCard = (props) => {
                         </a>
                         <span class="product-hot-label">Hot</span>
                         <ul class="product-links">
-                            <li><a onClick={() => setItem(item - 1)} data-tip="Add to Wishlist"><i>{<FaHeart />}</i></a></li>
-                            <li><a href="#" data-tip="Compare"><i>{<FaRandom />}</i></a></li>
-                            <li><a href="#" data-tip="Quick View"><i>{<FaSearch />}</i></a></li>
+                            <li><a data-tip="Add to Wishlist"><i>{<FaHeart />}</i></a></li>
+                            <li><a onClick={() => setItem(item - 1)} data-tip="Add To Cart"><i>{<FaShoppingCart />}</i></a></li>
+                            <li><a href={props.img} data-tip="Quick View"><i>{<FaSearch />}</i></a></li>
                         </ul>
                     </div>
                     <div class="product-content">
