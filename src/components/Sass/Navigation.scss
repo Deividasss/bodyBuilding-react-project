@@ -146,7 +146,7 @@
         color: white;
         font-size: 15px;
         position: absolute;
-        left: calc(100% - 60%);
+        left: calc(100% - 63%);
         bottom: 15px;
     }
     .navLink1:hover {
@@ -183,8 +183,68 @@
     }
 }
 
+//Iphone 12 PRO MAX
+@media only screen and (max-width: 600px) {
+    .navLink1 {
+        text-decoration: none;
+        color: white;
+        left: calc(100% - 74%);
+        font-size: 15px;
+        position: absolute;
+        bottom: 15px;
+    }
+    .navLink2 {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        left: calc(100% - 34%);
+        bottom: 15px;
+    }
+    .navLink1:hover {
+        color: rgb(117, 117, 117);
+    }
+    .navLink2:hover {
+        color: rgb(117, 117, 117);
+    }
+    .navCart {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        display: flex;
+        padding-right: 4%;
+    }
+    .navCart:hover {
+        color: rgb(117, 117, 117);
+    }
+}
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    .navLink1 {
+        text-decoration: none;
+        color: white;
+        left: calc(100% - 79%);
+        font-size: 15px;
+        position: absolute;
+        bottom: 15px;
+    }
+    .navLink2 {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        left: calc(100% - 65%);
+        bottom: 15px;
+    }
+    .navLink1:hover {
+        color: rgb(117, 117, 117);
+    }
+    .navLink2:hover {
+        color: rgb(117, 117, 117);
+    }
+}
+@media only screen and (min-width: 1400px) {
     .navLink1 {
         text-decoration: none;
         color: white;
