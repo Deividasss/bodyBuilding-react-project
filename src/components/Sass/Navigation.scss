@@ -31,23 +31,23 @@
     color: rgb(117, 117, 117);
 }
 .navCart {
-    text-decoration: none;
-    color: white;
-    padding-left: 2rem;
-    font-size: 20px;
-    display: flex;
-    padding-right: 2rem;
+    padding-right: 2% !important;
+    font-size: 20px !important;
+    position: relative !important;
+    bottom: 2px !important;
+    color: white !important;
 }
 .navCart:hover {
-    color: rgb(117, 117, 117);
+    color: rgb(117, 117, 117) !important;
 }
 .navBars {
-    background-color: rgba(200, 198, 198, 0.384) !important;
+    background-color: rgba(216, 215, 215, 0.4) !important;
+    color: white !important;
 }
-.dropDown {
-    padding: 5%;
-    background-color: rgba(75, 75, 75, 0.266);
+.navBars:hover{
+    background-color: #535353 !important;
 }
+
 .canvasHeader {
     background-color: rgb(48, 48, 48);
     color: white;

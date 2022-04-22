@@ -1,7 +1,7 @@
-import { Nav, Navbar, Container, Dropdown, Form, Button, Offcanvas, NavDropdown, FormControl, ListGroup } from "react-bootstrap"
+import { Nav, Navbar, Container, Dropdown, Form, Button, Offcanvas, NavDropdown, FormControl, ListGroup, DropdownButton, FormLabel, Table } from "react-bootstrap"
 import { Link, useNavigate } from "react-router-dom"
 import "../Sass/Navigation.scss"
-import { FaShoppingCart, FaBars } from 'react-icons/fa';
+import { FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa';
 
 const Navigation = () => {
     const navigate = useNavigate();
@@ -13,10 +13,61 @@ const Navigation = () => {
                 <Container>
                     <Link className="navLogo" to="BodyBuildingInfo">BodyX</Link>
                     <Nav className="me-auto">
-                            <Link className="navLink1" to="/Header">Powerlifting record table</Link>
-                            <Link className="navLink2" to="/MainShop">Shop</Link>
+                        <Link className="navLink1" to="/Header">Powerlifting record table</Link>
+                        <Link className="navLink2" to="/MainShop">Shop</Link>
                     </Nav>
-                    <Link className="navCart" to="/Cart"><FaShoppingCart /></Link>
+                    {/* <Link className="navCart" to="/Cart"><FaShoppingCart /></Link> */}
+                    <Dropdown align="end" className="navCart">
+                        <Dropdown.Toggle variant="none" className="navCart" >
+                            <FaShoppingCart />
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <Form>
+                                <Form.Group>
+                                    <Form.Label>
+                                        Your Shopping Cart
+                                    </Form.Label>
+                                    <Button className="btn-close" variant="dark"></Button>
+                                </Form.Group>
+                                <Form.Group>
+                                    <Table class="table table-image">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"></th>
+                                                <th scope="col">Product</th>
+                                                <th scope="col">Price</th>
+                                                <th scope="col">Qty</th>
+                                                <th scope="col">Total</th>
+                                                <th scope="col">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="w-25">
+                                                    <img src="./img/vans.png" class="img-fluid img-thumbnail" alt="Sheep" />
+                                                </td>
+                                                <td>Vans Sk8-Hi MTE Shoes</td>
+                                                <td>89$</td>
+                                                <td class="qty"><input type="text" class="form-control" id="input1" value="2" /></td>
+                                                <td>178$</td>
+                                                <td>
+                                                    <Button className="btn btn-danger btn-sm">
+                                                        <i><FaTimes /></i>
+                                                    </Button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </Table>
+                                    <Form.Group>
+                                        <Form.Label>Total: <span class="price text-success">89$</span></Form.Label>
+                                    </Form.Group>
+                                </Form.Group>
+                                <div class="modal-footer border-top-0 d-flex justify-content-between">
+                                    <Button className="btn btn-success">Checkout</Button>
+                                </div>
+                            </Form>
+                        </Dropdown.Menu>
+                    </Dropdown>
                     <Navbar.Toggle className="navBars"><FaBars /></Navbar.Toggle>
                     <Navbar.Offcanvas
                         id="offcanvasNavbar"
@@ -43,7 +94,7 @@ const Navigation = () => {
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
                 </Container>
-            </Navbar>
+            </Navbar >
         </>
     )
 }

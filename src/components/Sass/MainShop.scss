@@ -64,6 +64,7 @@ span {
 .product-grid .product-image img {
     width: 300px;
     height: 230px;
+    cursor: pointer;
 }
 .product-grid .product-image .pic-1 {
     transition: all 200ms ease 0s;
@@ -126,6 +127,7 @@ span {
     display: block;
     position: relative;
     transition: all 0.2s ease-out;
+    cursor: pointer;
 }
 .product-grid .product-links li a:hover {
     color: #fff;
