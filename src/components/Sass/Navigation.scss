@@ -52,7 +52,7 @@
     background-color: rgb(48, 48, 48);
     color: white;
 }
-.canvasTitle{
+.canvasTitle {
     margin-left: 40%;
 }
 .canvas {
@@ -122,11 +122,89 @@
     font-weight: bold;
     margin-right: 2%;
 }
-.canvasBtn{
+.canvasBtn {
     background-color: #555555 !important;
     margin: 5%;
     color: white;
 }
-.canvasBtn:hover{
+.canvasBtn:hover {
     background-color: #707070 !important;
+}
+
+//laptop
+@media only screen and (min-width: 992px) {
+    .navLink1 {
+        text-decoration: none;
+        color: white;
+        left: calc(100% - 80%);
+        font-size: 15px;
+        position: absolute;
+        bottom: 15px;
+    }
+    .navLink2 {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        left: calc(100% - 60%);
+        bottom: 15px;
+    }
+    .navLink1:hover {
+        color: rgb(117, 117, 117);
+    }
+    .navLink2:hover {
+        color: rgb(117, 117, 117);
+    }
+}
+
+//mobile
+@media only screen and (max-width: 600px) {
+    .navLink1 {
+        text-decoration: none;
+        color: white;
+        left: calc(100% - 75%);
+        font-size: 15px;
+        position: absolute;
+        bottom: 15px;
+    }
+    .navLink2 {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        left: calc(100% - 37%);
+        bottom: 15px;
+    }
+    .navLink1:hover {
+        color: rgb(117, 117, 117);
+    }
+    .navLink2:hover {
+        color: rgb(117, 117, 117);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .navLink1 {
+        text-decoration: none;
+        color: white;
+        left: calc(100% - 82%);
+        font-size: 15px;
+        position: absolute;
+        bottom: 15px;
+    }
+    .navLink2 {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        left: calc(100% - 67%);
+        bottom: 15px;
+    }
+    .navLink1:hover {
+        color: rgb(117, 117, 117);
+    }
+    .navLink2:hover {
+        color: rgb(117, 117, 117);
+    }
 }

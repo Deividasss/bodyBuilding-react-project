@@ -1,4 +1,4 @@
-import { Nav, Navbar, Container, Dropdown, Form, Button, Offcanvas, NavDropdown, FormControl } from "react-bootstrap"
+import { Nav, Navbar, Container, Dropdown, Form, Button, Offcanvas, NavDropdown, FormControl, ListGroup } from "react-bootstrap"
 import { Link, useNavigate } from "react-router-dom"
 import "../Sass/Navigation.scss"
 import { FaShoppingCart, FaBars } from 'react-icons/fa';
@@ -13,8 +13,8 @@ const Navigation = () => {
                 <Container>
                     <Link className="navLogo" to="BodyBuildingInfo">BodyX</Link>
                     <Nav className="me-auto">
-                        <Link className="navLink1" to="/Header">Powerlifting record table</Link>
-                        <Link className="navLink2" to="/MainShop">Shop</Link>
+                            <Link className="navLink1" to="/Header">Powerlifting record table</Link>
+                            <Link className="navLink2" to="/MainShop">Shop</Link>
                     </Nav>
                     <Link className="navCart" to="/Cart"><FaShoppingCart /></Link>
                     <Navbar.Toggle className="navBars"><FaBars /></Navbar.Toggle>
@@ -37,9 +37,9 @@ const Navigation = () => {
                                 <div class="middle-container">
                                     <div class="d-flex flex-column text-right mr-2"> <span class="current-balance">Current Balance:</span> <span class="amount">1476 <span class="dollar-sign">$</span></span></div>
                                 </div>
-                                <Button className="canvasBtn" variant="dark" onClick={()=> navigate("/")}>Sign Out</Button>
+                                <Button className="canvasBtn" variant="dark" onClick={() => navigate("/")}>Sign Out</Button>
                             </div>
-                           
+
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
                 </Container>
