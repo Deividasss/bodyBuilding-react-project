@@ -2,15 +2,21 @@ import { useState } from "react"
 import { Card, Button } from "react-bootstrap"
 import "../../Sass/MainShop.scss"
 import { Modal } from "react-bootstrap"
-import { FaStar, FaHeart, FaRandom, FaSearch, FaShoppingCart } from 'react-icons/fa';
+import { FaStar, FaHeart, FaRandom, FaSearch, FaShoppingCart, FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa';
 
 
 const ShopCard = (props) => {
     const [item, setItem] = useState(props.inStock)
     const [modal, setModal] = useState(false)
+    const [quantity, setQuantity] = useState(0)
+    const [price, setPrice] = useState(props.price)
 
-    if (item === 0) {
-        item = 'out of stock'
+    const stockCount = () => {
+        if (item >= 2) {
+            setItem(item - 1)
+        } else {
+            setItem('out of stock ')
+        }
     }
 
     const openModal = () => {
@@ -21,6 +27,17 @@ const ShopCard = (props) => {
         setModal(false)
     }
 
+    const quantityUp = () => {
+        setQuantity(quantity + 1)
+        setPrice(price * quantity)
+
+    }
+    const quantityDown = () => {
+        if (quantity >= 1) {
+            setQuantity(quantity - 1)
+        }
+
+    }
 
 
     return (
@@ -36,7 +53,7 @@ const ShopCard = (props) => {
                         <span class="product-hot-label">Hot</span>
                         <ul class="product-links">
                             <li><a data-tip="Add to Wishlist"><i>{<FaHeart />}</i></a></li>
-                            <li><a onClick={() => setItem(item - 1)} data-tip="Add To Cart"><i>{<FaShoppingCart />}</i></a></li>
+                            <li><a onClick={stockCount} data-tip="Add To Cart"><i>{<FaShoppingCart />}</i></a></li>
                             <li><a href={props.img} data-tip="Quick View"><i>{<FaSearch />}</i></a></li>
                         </ul>
                     </div>
@@ -59,7 +76,7 @@ const ShopCard = (props) => {
                     <div class="pop-up-container">
                         <div class="pop-up-container-vertical">
                             <div class="pop-up-wrapper">
-                               <Button variant="close" onClick={hideModal}></Button>
+                                <Button className="itemModalBtn" variant="close" onClick={hideModal}></Button>
                                 <div class="product-details">
                                     <div class="product-left">
                                         <div class="product-info">
@@ -71,7 +88,7 @@ const ShopCard = (props) => {
                                             </div>
                                         </div>
                                         <div>
-                                            <img class="InfoFoto" src={props.img}/>
+                                            <img class="InfoFoto" src={props.img} />
                                         </div>
                                     </div>
                                     <div class="product-right">
@@ -79,14 +96,14 @@ const ShopCard = (props) => {
                                             Designer Karim Rashid continues to put his signature spin on all genres of design through various collaborations with top-notch companies. Another one to add to the win column is his work with Italian manufacturer Chateau d’Ax.
                                         </div>
                                         <div class="product-available">
-                                            In stock. <span class="product-extended"><a href="#">Buy Extended Warranty</a></span>
+                                            In stock.
                                         </div>
                                         <div class="product-rating">
-                                            <i><FaStar/></i>
-                                            <i><FaStar/></i>
-                                            <i><FaStar/></i>
-                                            <i><FaStar/></i>
-                                            <i><FaStar/></i>
+                                            <i><FaStar /></i>
+                                            <i><FaStar /></i>
+                                            <i><FaStar /></i>
+                                            <i><FaStar /></i>
+                                            <i><FaStar /></i>
                                             <div class="product-rating-details">(3.1 - <span class="rating-count">1203</span> reviews)
                                             </div>
 
@@ -94,13 +111,13 @@ const ShopCard = (props) => {
                                         <div class="product-quantity">
                                             <label for="product-quantity-input" class="product-quantity-label">Quantity</label>
                                             <div class="product-quantity-subtract">
-                                                <i class="fa fa-chevron-left"></i>
+                                                <Button className="quantityBtn" variant="none" onClick={quantityDown}><FaChevronCircleLeft onClick={quantityDown} /></Button>
                                             </div>
                                             <div>
-                                                <input type="text" id="product-quantity-input" placeholder="0" value="0" />
+                                                <input type="text" id="product-quantity-input" value={quantity} />
                                             </div>
                                             <div class="product-quantity-add">
-                                                <i class="fa fa-chevron-right"></i>
+                                                <Button variant="none" className="quantityBtn2" onClick={quantityUp}><FaChevronCircleRight /></Button>
                                             </div>
                                         </div>
                                     </div>
@@ -108,14 +125,13 @@ const ShopCard = (props) => {
                                         <div class="product-checkout">
                                             Total Price
                                             <div class="product-checkout-total">
-                                                <i class="fa fa-usd"></i>
                                                 <div class="product-checkout-total-amount">
-                                                    0.00
+                                                    {price}
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="product-checkout-actions">
-                                            <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
+                                            <Button onClick={hideModal} className="addToCartBtn" variant="dark">Add To Cart</Button>
 
                                         </div>
                                     </div>
