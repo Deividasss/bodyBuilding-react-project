@@ -27,7 +27,6 @@ const Navigation = () => {
                                     <Form.Label>
                                         Your Shopping Cart
                                     </Form.Label>
-                                    <Button className="btn-close" variant="dark"></Button>
                                 </Form.Group>
                                 <Form.Group>
                                     <Table class="table table-image">
@@ -36,20 +35,16 @@ const Navigation = () => {
                                                 <th scope="col"></th>
                                                 <th scope="col">Product</th>
                                                 <th scope="col">Price</th>
-                                                <th scope="col">Qty</th>
-                                                <th scope="col">Total</th>
                                                 <th scope="col">Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="w-25">
-                                                    <img src="./img/vans.png" class="img-fluid img-thumbnail" alt="Sheep" />
+                                                <td>
+                                                    <img src="#" class="img-fluid img-thumbnail" alt="Foto" />
                                                 </td>
-                                                <td>Vans Sk8-Hi MTE Shoes</td>
-                                                <td>89$</td>
-                                                <td class="qty"><input type="text" class="form-control" id="input1" value="2" /></td>
-                                                <td>178$</td>
+                                                <td>Powerlifting Belt</td>
+                                                <td>200$</td>
                                                 <td>
                                                     <Button className="btn btn-danger btn-sm">
                                                         <i><FaTimes /></i>
@@ -59,7 +54,7 @@ const Navigation = () => {
                                         </tbody>
                                     </Table>
                                     <Form.Group>
-                                        <Form.Label>Total: <span class="price text-success">89$</span></Form.Label>
+                                        <Form.Label>Total: <span class="price text-success">200$</span></Form.Label>
                                     </Form.Group>
                                 </Form.Group>
                                 <div class="modal-footer border-top-0 d-flex justify-content-between">
@@ -68,6 +63,8 @@ const Navigation = () => {
                             </Form>
                         </Dropdown.Menu>
                     </Dropdown>
+
+                    
                     <Navbar.Toggle className="navBars"><FaBars /></Navbar.Toggle>
                     <Navbar.Offcanvas
                         id="offcanvasNavbar"

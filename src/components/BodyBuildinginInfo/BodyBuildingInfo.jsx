@@ -2,7 +2,7 @@
 
 const BodyBuildingInfo =()=>{
     return(
-        <><h2>fffffff</h2></>
+        <><h2>Puslapio pradžia. Kolkas čia tusčia</h2></>
     )
 }
 
