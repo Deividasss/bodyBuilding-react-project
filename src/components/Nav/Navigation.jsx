@@ -21,8 +21,8 @@ const Navigation = () => {
                         <Dropdown.Toggle variant="none" className="navCart" >
                             <FaShoppingCart />
                         </Dropdown.Toggle>
-                        <Dropdown.Menu>
-                            <Form>
+                        <Dropdown.Menu variant="dark" className="p-3">
+                            <Form className="cartMenu">
                                 <Form.Group>
                                     <Form.Label>
                                         Your Shopping Cart
@@ -32,10 +32,10 @@ const Navigation = () => {
                                     <Table class="table table-image">
                                         <thead>
                                             <tr>
-                                                <th scope="col"></th>
-                                                <th scope="col">Product</th>
-                                                <th scope="col">Price</th>
-                                                <th scope="col">Actions</th>
+                                                <th></th>
+                                                <th>Product</th>
+                                                <th>Price</th>
+                                                <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -46,9 +46,7 @@ const Navigation = () => {
                                                 <td>Powerlifting Belt</td>
                                                 <td>200$</td>
                                                 <td>
-                                                    <Button className="btn btn-danger btn-sm">
-                                                        <i><FaTimes /></i>
-                                                    </Button>
+                                                    <Button className="btn-close" variant="danger" />
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -64,7 +62,7 @@ const Navigation = () => {
                         </Dropdown.Menu>
                     </Dropdown>
 
-                    
+
                     <Navbar.Toggle className="navBars"><FaBars /></Navbar.Toggle>
                     <Navbar.Offcanvas
                         id="offcanvasNavbar"

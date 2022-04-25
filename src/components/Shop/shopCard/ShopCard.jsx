@@ -55,16 +55,75 @@ const ShopCard = (props) => {
             </div>
 
             <Modal className="itemModal" show={modal} aria-labelledby="contained-modal-title-vcenter" centered>
-                <Card className="itemCard">
-                    <Card.Body className="itemInfo" >
-                        <Card.Img className="itemImg" variant="top" src={props.img}></Card.Img>
-                        <Card.Text className="itemInfoPrice">{props.price}</Card.Text>
-                        <Card.Text className="itemInfoPrice">{props.title}</Card.Text>
-                        <Button variant="light" className="itemBtn" onClick={hideModal}>Back</Button>
+                <div class="lightbox-blanket">
+                    <div class="pop-up-container">
+                        <div class="pop-up-container-vertical">
+                            <div class="pop-up-wrapper">
+                               <Button variant="close" onClick={hideModal}></Button>
+                                <div class="product-details">
+                                    <div class="product-left">
+                                        <div class="product-info">
+                                            <div class="product-title">
+                                                {props.title}
+                                            </div>
+                                            <div class="product-price" price-data="320.03">
+                                                {props.price}<span class="product-price-cents">{props.inStock}</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <img class="InfoFoto" src={props.img}/>
+                                        </div>
+                                    </div>
+                                    <div class="product-right">
+                                        <div class="product-description">
+                                            Designer Karim Rashid continues to put his signature spin on all genres of design through various collaborations with top-notch companies. Another one to add to the win column is his work with Italian manufacturer Chateau d’Ax.
+                                        </div>
+                                        <div class="product-available">
+                                            In stock. <span class="product-extended"><a href="#">Buy Extended Warranty</a></span>
+                                        </div>
+                                        <div class="product-rating">
+                                            <i><FaStar/></i>
+                                            <i><FaStar/></i>
+                                            <i><FaStar/></i>
+                                            <i><FaStar/></i>
+                                            <i><FaStar/></i>
+                                            <div class="product-rating-details">(3.1 - <span class="rating-count">1203</span> reviews)
+                                            </div>
 
-                    </Card.Body>
+                                        </div>
+                                        <div class="product-quantity">
+                                            <label for="product-quantity-input" class="product-quantity-label">Quantity</label>
+                                            <div class="product-quantity-subtract">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </div>
+                                            <div>
+                                                <input type="text" id="product-quantity-input" placeholder="0" value="0" />
+                                            </div>
+                                            <div class="product-quantity-add">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-bottom">
+                                        <div class="product-checkout">
+                                            Total Price
+                                            <div class="product-checkout-total">
+                                                <i class="fa fa-usd"></i>
+                                                <div class="product-checkout-total-amount">
+                                                    0.00
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-checkout-actions">
+                                            <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
 
-                </Card>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </Modal>
         </>
     )
