@@ -1,7 +1,7 @@
-import { Nav, Navbar, Container, Dropdown, Form, Button, Offcanvas, NavDropdown, FormControl, ListGroup, DropdownButton, FormLabel, Table } from "react-bootstrap"
+import { Nav, Navbar, Container, Dropdown, Form, Button, Offcanvas, Table } from "react-bootstrap"
 import { Link, useNavigate } from "react-router-dom"
 import "../Sass/Navigation.scss"
-import { FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa';
+import { FaShoppingCart, FaBars,} from 'react-icons/fa';
 
 const Navigation = () => {
     const navigate = useNavigate();
@@ -11,7 +11,7 @@ const Navigation = () => {
         <>
             <Navbar className="navigation" expand={false}>
                 <Container>
-                    <Link className="navLogo" to="BodyBuildingInfo">BodyX</Link>
+                    <Link className="navLogo" to="/BodyXMainPage">BodyX</Link>
                     <Nav className="me-auto">
                         <Link className="navLink1" to="/Header">Powerlifting record table</Link>
                         <Link className="navLink2" to="/MainShop">Shop</Link>

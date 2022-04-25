@@ -37,10 +37,12 @@ const MainShop = (props) => {
                             price={shop.price}
                             img={shop.img}
                             inStock={shop.inStock}
+                            description={shop.description}
                         />
                     )}
                 </div>
             </div>
+            <div className="spacer"></div>
         </>
     )
 }

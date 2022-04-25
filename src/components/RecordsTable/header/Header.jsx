@@ -13,16 +13,17 @@ const Header = () => {
 
         })
     }
-    
+
 
     return (
         <>
-            <AddRecord  onSave={saveRecordHandler} />
+            <AddRecord onSave={saveRecordHandler} />
             <table className="compTable">
                 <tbody className="compTableBody">
                     <RecordsTable data={record} />
                 </tbody>
             </table>
+            <div className="spacer2"></div>
         </>
     )
 }

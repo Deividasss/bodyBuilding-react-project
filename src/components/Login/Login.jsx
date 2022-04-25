@@ -20,7 +20,7 @@ const Login = () => {
     }
     const submitHandler = (e) => {
         e.preventDefault()
-        navigate("/BodyBuildingInfo")
+        navigate("/BodyXMainPage")
         console.log(login)
     }
 

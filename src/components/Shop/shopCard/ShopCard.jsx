@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Card, Button } from "react-bootstrap"
 import "../../Sass/MainShop.scss"
 import { Modal } from "react-bootstrap"
-import { FaStar, FaHeart, FaRandom, FaSearch, FaShoppingCart, FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa';
+import { FaStar, FaHeart, FaSearch, FaShoppingCart, FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa';
 
 
 const ShopCard = (props) => {
@@ -83,8 +83,8 @@ const ShopCard = (props) => {
                                             <div class="product-title">
                                                 {props.title}
                                             </div>
-                                            <div class="product-price" price-data="320.03">
-                                                {props.price}<span class="product-price-cents">{props.inStock}</span>
+                                            <div class="product-price">
+                                                {props.price}<span class="product-price-cents">/{item}vnt</span>
                                             </div>
                                         </div>
                                         <div>
@@ -93,10 +93,7 @@ const ShopCard = (props) => {
                                     </div>
                                     <div class="product-right">
                                         <div class="product-description">
-                                            Designer Karim Rashid continues to put his signature spin on all genres of design through various collaborations with top-notch companies. Another one to add to the win column is his work with Italian manufacturer Chateau d’Ax.
-                                        </div>
-                                        <div class="product-available">
-                                            In stock.
+                                            {props.description}
                                         </div>
                                         <div class="product-rating">
                                             <i><FaStar /></i>
