@@ -1,7 +1,7 @@
-import { Nav, Navbar, Container, Dropdown, Form, Button, Offcanvas, Table } from "react-bootstrap"
+import { Nav, Navbar, Container, Dropdown, Form, Button, Offcanvas, Table, NavDropdown } from "react-bootstrap"
 import { Link, useNavigate } from "react-router-dom"
 import "../Sass/Navigation.scss"
-import { FaShoppingCart, FaBars,} from 'react-icons/fa';
+import { FaShoppingCart, FaBars, } from 'react-icons/fa';
 
 const Navigation = () => {
     const navigate = useNavigate();
@@ -12,10 +12,14 @@ const Navigation = () => {
             <Navbar className="navigation" expand={false}>
                 <Container>
                     <Link className="navLogo" to="/BodyXMainPage">BodyX</Link>
-                    <Nav className="me-auto">
-                        <Link className="navLink1" to="/Header">Powerlifting record table</Link>
-                        <Link className="navLink2" to="/MainShop">Shop</Link>
-                    </Nav>
+                    <Link className="navLink1" to="/Header">Powerlifting record table</Link>
+                    <Dropdown className="shopDropDown">
+                        <Dropdown.Toggle className="shopDropDown" variant="none" >Shop</Dropdown.Toggle>
+                        <Dropdown.Menu variant="dark">
+                            <NavDropdown.Item onClick={() => navigate('/EquipmentShop')}>Equipments</NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => navigate('/SupplementsShop')}>Supplements</NavDropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
                     {/* <Link className="navCart" to="/Cart"><FaShoppingCart /></Link> */}
                     <Dropdown align="end" className="navCart">
                         <Dropdown.Toggle variant="none" className="navCart" >

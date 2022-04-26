@@ -29,7 +29,7 @@ const ShopCard = (props) => {
 
     const quantityUp = () => {
         setQuantity(quantity + 1)
-        setPrice(price * quantity)
+        setPrice(price * price)
 
     }
     const quantityDown = () => {
@@ -66,7 +66,7 @@ const ShopCard = (props) => {
                             <li><FaStar /></li>
                             <li><FaStar /></li>
                         </ul>
-                        <div class="price">{props.price}<span>/{item}vnt</span></div>
+                        <div class="price">{props.price}$<span>/{item}vnt</span></div>
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@ const ShopCard = (props) => {
                                             Total Price
                                             <div class="product-checkout-total">
                                                 <div class="product-checkout-total-amount">
-                                                    {price}
+                                                    {price}$
                                                 </div>
                                             </div>
                                         </div>

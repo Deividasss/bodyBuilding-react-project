@@ -1,15 +1,47 @@
 .mainPageImg {
     width: 100%;
     opacity: 0.7;
-    margin-top: -5%;
 }
-.mainPageInfo{
+.mainPageInfo {
     background-color: rgba(97, 97, 97, 0.697);
-    height: 100vh;
-    margin-top: -4%;
-    z-index: 2;
+    height: 200vh;
+    z-index: 10;
+    width: calc(100% - 5%);
+    margin: auto;
+}
+.mainPageTitle {
+    padding-top: 5%;
+}
+
+.aboutUs{
+    display:flex;
+}
+.aboutUsText h3{
+    margin: 12% 0 2% 35%;
+    color: rgb(203, 203, 203);
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.aboutUsText p{
+    font-size: 20px;
+    padding: 2%;
+   
+}
+
+.aboutUs img {
+    width: 30%;
+    margin: 5% 0 0 15%;
     border-radius: 15px;
+    opacity: 0.8;
+    border: 2px solid black;
 }
-.mainPageTitle{
-    padding-top: 10%;
+.shopSection{
+    padding: 15% 0 0 10%;
 }
+
+.shopSection img{
+    width: 300px;
+    cursor: pointer;
+}
+

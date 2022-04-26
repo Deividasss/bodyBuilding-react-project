@@ -1,6 +1,8 @@
 .navigation {
     background-color: rgba(0, 0, 0, 0.552);
     z-index: 999;
+    position: fixed !important;
+    width: 100%;
 }
 
 .navLogo {
@@ -12,30 +14,27 @@
 .navLink1 {
     text-decoration: none;
     color: white;
-    left: calc(100% - 82%);
     font-size: 15px;
-    position: absolute;
-    bottom: 15px;
+    margin-left: 8%;
 }
-.navLink2 {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    position: absolute;
-    left: calc(100% - 70%);
-    bottom: 15px;
-}
+
 .navLink1:hover {
     color: rgb(117, 117, 117);
 }
-.navLink2:hover {
-    color: rgb(117, 117, 117);
+.shopDropDown {
+    color: white !important;
+    position: relative !important;
+    right: 22%;
+}
+.shopDropDown:hover {
+    color: rgb(117, 117, 117) !important;
 }
 .navCart {
     padding-right: 2% !important;
     font-size: 20px !important;
     position: relative !important;
     bottom: 2px !important;
+    left: 25%;
     color: white !important;
 }
 .navCart:hover {
@@ -45,7 +44,7 @@
     background-color: rgba(216, 215, 215, 0.4) !important;
     color: white !important;
 }
-.navBars:hover{
+.navBars:hover {
     background-color: #535353 !important;
 }
 
@@ -132,26 +131,15 @@
     background-color: #585858 !important;
 }
 
-
-.cartMenu{
-color: white;
-}
-th{
+.cartMenu {
     color: white;
 }
-td{
+th {
     color: white;
 }
-
-
-
-
-
-
-
-
-
-
+td {
+    color: white;
+}
 
 //laptop
 @media only screen and (min-width: 992px) {

@@ -9,7 +9,7 @@ const Login = () => {
     const [login, setLogin] = useState({
         name: 'name',
         email: 'email',
-        password:'password'
+        password: 'password'
     })
 
     const handleChange = (e) => {
@@ -35,7 +35,7 @@ const Login = () => {
                         placeholder="UserName"
                         name="name"
                         onChange={handleChange}
-                        required  
+                        required
                     />
                 </Form.Group>
                 <Form.Group className="mb-3">
@@ -66,6 +66,7 @@ const Login = () => {
                 </Form.Group>
                 <Button className="loginBtn" variant="dark" type="submit">LOGIN</Button>
             </Form>
+            <div className="spacer3"></div>
         </>
     )
 }
