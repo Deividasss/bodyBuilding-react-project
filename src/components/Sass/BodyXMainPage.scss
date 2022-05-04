@@ -4,7 +4,7 @@
 }
 .mainPageInfo {
     background-color: rgba(97, 97, 97, 0.697);
-    height: 200vh;
+    height: 270vh;
     z-index: 10;
     width: calc(100% - 5%);
     margin: auto;
@@ -13,20 +13,20 @@
     padding-top: 5%;
 }
 
-.aboutUs{
-    display:flex;
+.aboutUs {
+    display: flex;
 }
-.aboutUsText h3{
-    margin: 12% 0 2% 35%;
+.aboutUsText h3 {
+    padding-top: 15%;
+    text-align: center;
     color: rgb(203, 203, 203);
     font-weight: bold;
     text-transform: capitalize;
     text-decoration: underline;
 }
-.aboutUsText p{
+.aboutUsText p {
     font-size: 20px;
     padding: 2%;
-   
 }
 
 .aboutUs img {
@@ -36,12 +36,102 @@
     opacity: 0.8;
     border: 2px solid black;
 }
-.shopSection{
-    padding: 15% 0 0 10%;
+.shopSection {
+    background-color: rgba(56, 56, 56, 0.404);
+    height: 370px;
+}
+.shopLinks {
+    display: flex;
+    margin-left: 10%;
+    padding-top: 2%;
 }
 
-.shopSection img{
+.shop h2 {
+    color: white;
+    margin-top: 15%;
+    text-align: center;
+}
+.shopSection img {
     width: 300px;
+    height: 250px;
     cursor: pointer;
+    opacity: 0.7;
+    border-radius: 10px 0 0 10px;
 }
-
+.shopSection img:hover {
+    opacity: 0.9;
+}
+.supplementsShopLink {
+    padding: 2% 5% 5% 0%;
+    display: flex;
+    p {
+        width: 40%;
+        font-size: 20px;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.44);
+        border-radius: 0 10px 10px 0;
+        padding: 5%;
+        line-height: 20px;
+        span {
+            font-size: 17px;
+        }
+    }
+}
+.equipmentShopLink {
+    padding: 2% 5% 5% 0%;
+    display: flex;
+    p {
+        width: 40%;
+        font-size: 20px;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.44);
+        border-radius: 0 10px 10px 0;
+        padding: 5%;
+        line-height: 20px;
+        span {
+            font-size: 17px;
+        }
+    }
+}
+.connectWithUs {
+    margin-top: 10%;
+}
+.connectWithUs h2 {
+    text-align: center;
+    color: white;
+}
+.columns {
+    display: flex;
+    background-color: rgba(53, 53, 53, 0.378);
+    padding: 3%;
+    justify-content: center;
+    height: 320px;
+}
+.column {
+    background-color: rgba(41, 41, 41, 0.588);
+    text-align: center;
+    margin-left: 2%;
+    width: calc(100% - 50%);
+    border-radius: 15px;
+    p {
+        padding: 0 5% 2% 5%;
+        text-align: center;
+        font-size: 20px;
+    }
+    h5 {
+        color: white;
+        margin: 15px 0 20px 0;
+    }
+    a {
+        color: rgb(180, 180, 180);
+        text-decoration: underline;
+    }
+    a:hover {
+        color: rgb(104, 104, 104);
+    }
+}
+.columnLogo {
+    font-size: 40px;
+    color: black;
+    padding-right: 3%;
+}

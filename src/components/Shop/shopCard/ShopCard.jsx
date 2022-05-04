@@ -8,7 +8,7 @@ import { FaStar, FaHeart, FaSearch, FaShoppingCart, FaChevronCircleLeft, FaChevr
 const ShopCard = (props) => {
     const [item, setItem] = useState(props.inStock)
     const [modal, setModal] = useState(false)
-    const [quantity, setQuantity] = useState(0)
+    const [quantity, setQuantity] = useState(1)
     const [price, setPrice] = useState(props.price)
 
     const stockCount = () => {
@@ -28,13 +28,21 @@ const ShopCard = (props) => {
     }
 
     const quantityUp = () => {
-        setQuantity(quantity + 1)
-        setPrice(price * price)
-
+        if (item > 1) {
+            setItem(item - 1)
+            setQuantity(quantity + 1)
+            setPrice(props.price + price)
+        } else {
+            setItem('out of stock ')
+        }
     }
     const quantityDown = () => {
-        if (quantity >= 1) {
+        if (quantity >= 2) {
             setQuantity(quantity - 1)
+            setPrice(price - props.price)
+            setItem(item + 1)
+        }else{
+            
         }
 
     }
