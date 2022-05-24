@@ -5,7 +5,6 @@ Application is incomplete so it has many flaws and bugs.
 This project without Back-End, so authentication doesn't work.
 
 ## What you can find in this application:
-```
-Supplements and powerlifting equipment shop
-Personal records table
-```
+
+- Supplements and powerlifting equipment shop
+- Personal records table
