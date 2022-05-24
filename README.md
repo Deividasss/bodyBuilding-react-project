@@ -7,4 +7,5 @@ Project without Back-End, so authentication doesn't work.
 ## What you can find in this application:
 
 - Supplements and powerlifting equipment shop
+- Shoping cart (doesn't work)
 - Personal records table
