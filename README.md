@@ -2,7 +2,7 @@
 
 This is me small personal React project. 
 Application is incomplete so it has many flaws and bugs. 
-This project without Back-End, so authentication doesn't work.
+Project without Back-End, so authentication doesn't work.
 
 ## What you can find in this application:
 
