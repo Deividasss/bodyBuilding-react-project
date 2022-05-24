@@ -22,6 +22,7 @@ const RecordsTable = (props) => {
                         team={comp.team}
                         category={comp.category}
                         record={comp.record}
+                        delete={props.delete}
                     />)
                 })
                 }

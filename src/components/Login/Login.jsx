@@ -21,7 +21,6 @@ const Login = () => {
     const submitHandler = (e) => {
         e.preventDefault()
         navigate("/BodyXMainPage")
-        console.log(login)
     }
 
     return (

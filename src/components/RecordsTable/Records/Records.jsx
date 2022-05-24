@@ -1,4 +1,4 @@
-
+import { Button } from "react-bootstrap"
 
 const Records = (props) => {
     return (
@@ -8,7 +8,7 @@ const Records = (props) => {
                 <td>{props.team}</td>
                 <td>{props.category}</td>
                 <td>{props.record}</td>
-                <td><button>Delete</button></td>
+                <td><Button onClick={() => props.delete(props.index)}>Delete</Button></td>
             </tr>
         </>
     )
