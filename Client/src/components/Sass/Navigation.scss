@@ -1,0 +1,269 @@
+.navigation {
+    background-color: rgba(0, 0, 0, 0.552);
+    z-index: 999;
+    position: fixed !important;
+    width: 100%;
+}
+
+.navLogo {
+    color: white !important;
+    font-size: 30px !important;
+    text-decoration: none;
+}
+
+.navLink1 {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-left: 4%;
+    margin-bottom: 5px;
+}
+
+.navLink1:hover {
+    color: rgb(117, 117, 117);
+}
+.shopDropDown {
+    color: white !important;
+    position: relative !important;
+    right: 22%;
+}
+.shopDropDown:hover {
+    color: rgb(117, 117, 117) !important;
+}
+.navCart {
+    padding-right: 2% !important;
+    font-size: 20px !important;
+    position: relative !important;
+    bottom: 2px !important;
+    left: 25%;
+    color: white !important;
+}
+.navCart:hover {
+    color: rgb(117, 117, 117) !important;
+}
+.navBars {
+    background-color: rgba(216, 215, 215, 0.4) !important;
+    color: white !important;
+}
+.navBars:hover {
+    background-color: #535353 !important;
+}
+
+.canvasHeader {
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+.canvasTitle {
+    margin-left: 40%;
+}
+.canvas {
+    background-color: rgb(66, 66, 66);
+}
+.canvasForm {
+    color: white;
+    padding: 5% 10% 5% 10%;
+    background-color: rgb(74, 74, 74);
+    border-radius: 5%;
+}
+
+.top-container {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    border-radius: 50%;
+    padding: 2%;
+    margin-left: 2%;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #272727;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    color: white;
+}
+
+.mail {
+    font-size: 14px;
+    color: grey;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.canvasCard {
+    background-color: #272727;
+    border-radius: 3%;
+}
+.middle-container {
+    background-color: rgb(61, 61, 61);
+    border-radius: 10px;
+    margin: 0 2% 0 2%;
+    padding: 2%;
+}
+
+.current-balance {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.amount {
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dollar-sign {
+    font-size: 16px;
+    color: #b3b3b3;
+    font-weight: bold;
+    margin-right: 2%;
+}
+.canvasBtn {
+    background-color: #555555 !important;
+    margin: 5%;
+    color: white;
+}
+.canvasBtn:hover {
+    background-color: #585858 !important;
+}
+
+.cartMenu {
+    color: rgb(255, 255, 255);
+}
+th {
+    color: white;
+}
+td {
+    color: white;
+}
+
+//laptop
+@media only screen and (min-width: 992px) {
+    .navLink1 {
+        text-decoration: none;
+        color: white;
+        left: calc(100% - 78%);
+        font-size: 15px;
+        position: absolute;
+        bottom: 15px;
+    }
+    .navLink2 {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        left: calc(100% - 60%);
+        bottom: 15px;
+    }
+    .navLink1:hover {
+        color: rgb(117, 117, 117);
+    }
+    .navLink2:hover {
+        color: rgb(117, 117, 117);
+    }
+}
+
+//mobile
+@media only screen and (max-width: 600px) {
+    .navLink1 {
+        text-decoration: none;
+        color: white;
+        left: calc(100% - 75%);
+        font-size: 15px;
+        position: absolute;
+        bottom: 15px;
+    }
+    .navLink2 {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        left: calc(100% - 37%);
+        bottom: 15px;
+    }
+    .navLink1:hover {
+        color: rgb(117, 117, 117);
+    }
+    .navLink2:hover {
+        color: rgb(117, 117, 117);
+    }
+}
+
+//Iphone 12 PRO MAX
+@media only screen and (max-width: 600px) {
+    .navLink1 {
+        text-decoration: none;
+        color: white;
+        left: calc(100% - 74%);
+        font-size: 15px;
+        position: absolute;
+        bottom: 15px;
+    }
+    .navLink1:hover {
+        color: rgb(117, 117, 117);
+    }
+    .navCart {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        display: flex;
+        padding-right: 3%;
+    }
+    .navCart:hover {
+        color: rgb(117, 117, 117);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1600px) {
+    .navLogo {
+        color: white !important;
+        font-size: 30px !important;
+        text-decoration: none;
+        margin-left: calc(100% - 115%);
+    }
+    .shopDropDown {
+        color: white !important;
+        position: relative !important;
+        right: 25%;
+    }
+    .navLink1 {
+        text-decoration: none;
+        color: white;
+        left: calc(100% - 85%);
+        font-size: 15px;
+        position: absolute;
+        bottom: 15px;
+    }
+
+    .navLink1:hover {
+        color: rgb(117, 117, 117);
+    }
+
+    .navCart {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        display: flex;
+        padding-right: 3%;
+        position: relative;
+        left: 43%;
+    }
+    .navCart:hover {
+        color: rgb(117, 117, 117);
+    }
+    .navBars {
+        background-color: rgba(216, 215, 215, 0.4) !important;
+        color: white !important;
+        position: relative;
+        left: 15%;
+    }
+    .navBars:hover {
+        background-color: #535353 !important;
+    }
+}

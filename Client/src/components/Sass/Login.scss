@@ -1,0 +1,25 @@
+.loginForm{
+    margin: 5%;
+    color: white;
+}
+.loginBtn{
+    background-color: #555555 !important;
+    color: white;
+}
+.loginBtn:hover{
+    background-color: #707070 !important;
+}
+
+.spacer3{
+    margin-top: 13%;
+}
+.registerBtn{
+    color: white;
+    position: relative;
+    left: 25%;
+    top: -28px;
+}
+.registerBtn:hover{
+    color: #b5b5b5;
+    cursor: pointer;
+}
