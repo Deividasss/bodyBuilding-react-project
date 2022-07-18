@@ -1,1 +1,2 @@
-# bodyBuilding-react-project
+# Bodybuilding web application
+
