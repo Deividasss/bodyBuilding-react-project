@@ -18,3 +18,8 @@ And then
 ### - Supplements shop
 ### - Equipment shop
 ### - Record table
+
+## Additional information 
+
+### WARNING!!!  This is a large application, so it has many flaws, so if you find bugs, don't be surprised
+
